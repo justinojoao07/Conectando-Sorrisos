@@ -14,17 +14,19 @@ Conectando-Sorrisos/
 ├── /css
 │   └── style.css
 ├── /paginas
+|   └── cadastro.html
 │   └── contato.html
+|   └── doacao.html
 │   └── faq.html
+|   └── fila.html
 │   └── integrantes.html
 │   └── sobre.html
 └── /img
-│   └──
-│   └──
-│   └── logo.png
-│   └──
+│   └──/img.integrantes
+|       └────/foto-integrantes.jpg
+│   └── hero-atendimento.jpg
 ├── README.md
- 
+
  
 Integrantes:
  
