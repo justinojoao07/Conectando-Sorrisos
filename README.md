@@ -42,3 +42,9 @@ Matheus Lira Castro | RM 575094 | 1TDSPA |
  Links do Integrante:
  Linkedin: www.linkedin.com/in/matheusliracastro
  GitHub: https://github.com/MatheusLira-31
+
+ Matheus Setra da Silva| RM 575352 | 1TDSPA |
+[Foto do Integrante]()
+ Links do Integrante:
+ Linkedin: https://www.linkedin.com/in/matheus-setra-b24444360/
+ GitHub: https://github.com/ogsxtra
