@@ -38,7 +38,7 @@ João Victor Justino Santos de Souza | RM 574645 | 1TDSPA |
 
 
 Matheus Lira Castro | RM 575094 | 1TDSPA |
-[Foto do Integrante]()
+[Foto do Integrante](../Conectando-Sorrisos/img/img.integrantes/IMG_MATHEUS_LIRA.JPG.jpeg)
  Links do Integrante:
  Linkedin: www.linkedin.com/in/matheusliracastro
  GitHub: https://github.com/MatheusLira-31
@@ -57,3 +57,6 @@ Enzo de Carvalho Pescuma | RM 576536 | 1TDSPA |
  Linkedin: https://www.linkedin.com/in/matheus-setra-b24444360/
  GitHub: https://github.com/ogsxtra
 >>>>>>> 5ff0bbac08ee9c1e4bc85dd29083207e57dbf121
+
+
+[def]: ../img/im
