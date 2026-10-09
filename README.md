@@ -30,8 +30,8 @@ Conectando-Sorrisos/
  
 Integrantes:
  
-João Victor Justino Santos de Souza | RM 57464 | 1TDSPA |
-[Foto do Integrante](img/foto-integrantes.jpg)
+João Victor Justino Santos de Souza | RM 574645 | 1TDSPA |
+[Foto do Integrante](../img/img.integrantes/foto-integrantes.jpg)
  Links do Integrante:
  Linkedin: www.linkedin.com/in/joão-justino-profile
  GitHub: https://github.com/justinojoao07
@@ -42,3 +42,10 @@ Matheus Lira Castro | RM 575094 | 1TDSPA |
  Links do Integrante:
  Linkedin: www.linkedin.com/in/matheusliracastro
  GitHub: https://github.com/MatheusLira-31
+
+Enzo de Carvalho Pescuma | RM 576536 | 1TDSPA |
+[Foto do Integrante](../img/img.integrantes/foto-integrantes.e.png)
+ Links do Integrante:
+ Linkedin: www.linkedin.com/in/enzo-de-carvalho-pescuma-29510a431/
+ GitHub: https://github.com/enzxcp
+
