@@ -57,3 +57,9 @@ Enzo de Carvalho Pescuma | RM 576536 | 1TDSPA |
  Linkedin: https://www.linkedin.com/in/matheus-setra-b24444360/
  GitHub: https://github.com/ogsxtra
 >>>>>>> 5ff0bbac08ee9c1e4bc85dd29083207e57dbf121
+
+Cauã Gomes Veiga Sena | RM 574718 | 1TDSPA |
+[Foto do Integrante](paginas/img/IMG_3705.png)
+ Links do Integrante:
+ Linkedin: https://www.linkedin.com/in/cau%C3%A3-sena/?isSelfProfile=true
+ GitHub: https://github.com/Cauasena13
