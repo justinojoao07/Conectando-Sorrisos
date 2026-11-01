@@ -1,19 +1,135 @@
-body {
-    background-color: #f2f2f2;
+* {
+  --menu-fundo: #ffffff;
+  --menu-texto: #7dff04;
 }
 
-h1 {
-    color: #12cbaf;
+html {
+    font-size: 16px;
+    --cor-fundo: #f4f7fb;
+    --cor-superficie: #ffffff;
+    --cor-texto: #7dff04;;
+    --cor-primaria: #7dff04;;
+    --cor-primaria-escura: #000000;
+    --cor-borda: #d8e2ee;
+    --cor-erro: #ec1405;
+    --cor-sucesso: #026c1f;
 }
 
-h2 {
-    color: #333333;
+/* ---------- CABEÇALHO ---------- */
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: var(--menu-fundo);
 }
 
-p {
-    color: #333333;
+.cabecalho-conteudo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
-a {
-    color: #12cbaf;
+.marca {
+  color: var(--menu-texto);
+  font-size: 1.3rem;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 15px 0;
+}
+
+/* ---------- MENU NO COMPUTADOR ---------- */
+.menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2px;
+}
+
+.menu a {
+  display: block;
+  padding: 18px 12px;
+  color: var(--menu-texto);
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.menu a:hover,
+.menu a:focus-visible {
+  background-color: var(--menu-destaque);
+  color: #222;
+  outline: none;
+}
+
+/* ESCONDENDO BOTÃO NO COMPUTADOR  */
+.hamburguer {
+  display: none;
+}
+
+/* ---------- RESPOSIVIDADE ---------- */
+@media (max-width: 900px) {
+
+  .hamburguer {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    background: none;
+    border: none;
+    padding: 12px 8px;
+    cursor: pointer;
+  }
+
+  .hamburguer span {
+    display: block;
+    width: 28px;
+    height: 3px;
+    background-color: var(--menu-texto);
+    border-radius: 2px;
+    transition: transform 0.3s, opacity 0.3s;
+  }
+
+  
+  .hamburguer.ativo span:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburguer.ativo span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburguer.ativo span:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .hamburguer:focus-visible {
+    outline: 3px solid var(--menu-destaque);
+    outline-offset: 2px;
+  }
+
+  .cabecalho nav {
+    display: contents;
+  }
+
+  .hamburguer {
+    order: 2;
+  }
+
+  .menu {
+    order: 3;
+    width: 100%;
+    display: none;
+    flex-direction: column;
+    gap: 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.25);
+  }
+
+  .menu.aberto {
+    display: flex;
+  }
+
+  .menu a {
+    padding: 14px 8px;
+  }
 }

@@ -5,71 +5,84 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Conectando Sorrisos</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/menu.css">
+
+    <script src="js/script.js" defer></script>
 </head>
-<body> 
-    
-    <main>
+<body>
+
     <header class="cabecalho">
         <div class="container cabecalho-conteudo">
-            <a class="marca" href="index.html" aria-label="Conectando Sorrisos - Página Inicial"
-                >Conectando Sorrisos</a>
-           
-        <nav aria-label="Navegação Principal">
-                <ul class="menu">
-                    <a href="index.html">Início</a>
-                    <a href="paginas/integrantes.html">Quem Somos</a>
-                    <a href="paginas/sobre.html">Sobre</a>
-                    <a href="paginas/faq.html">FAQ</a>
-                    <a href="paginas/contato.html">Contato</a>
-                    <a href="paginas/cadastro.html">Cadastro</a>
-                    <a href="paginas/doacao.html">Doação</a>
-                    <a href="paginas/fila.html">Fila de Espera</a>
+            <a class="marca" href="index.html" aria-label="Conectando Sorrisos - Página Inicial">Conectando Sorrisos</a>
+
+            <nav aria-label="Navegação Principal">
+              
+                <button id="botao-menu" class="hamburguer" type="button"
+                        aria-label="Abrir menu" aria-expanded="false" aria-controls="menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <ul id="menu" class="menu">
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="paginas/integrantes.html">Quem Somos</a></li>
+                    <li><a href="paginas/sobre.html">Sobre</a></li>
+                    <li><a href="paginas/faq.html">FAQ</a></li>
+                    <li><a href="paginas/contato.html">Contato</a></li>
+                    <li><a href="paginas/cadastro.html">Cadastro</a></li>
+                    <li><a href="paginas/doacao.html">Doação</a></li>
+                    <li><a href="paginas/fila.html">Fila de Espera</a></li>
                 </ul>
             </nav>
         </div>
     </header>
- 
-    <section id="Inicio">
-        <section class="hero" aria-labelledby="titulo-pricipal">
-            <div class="container hero-conteudo">
-                <p class="etiqueta">Bem-vindo ao Conectando Sorrisos.</p>
-                <h1 id="titulo-pricipal">Um sorriso pode abrir a porta do primeiro emprego.</h1>
-                <p class="hero-texto">
-                "A plataforma da Turma do Bem que organiza cadastros, prioriza quem mais precisa e conecta dentistas voluntários, empresas e doadores em um só lugar."
-                </p>
-                <p class="hero-texto">Nosso projeto tem como o propósito de fazer a intermediação entre doadores, vagas de trabalho e principalmente 
-                    pessoas que precisam de um sorriso para conseguir uma vida melhor. 
-                    Acreditamos que um sorriso pode abrir portas e transformar vidas, e estamos aqui para ajudar a tornar isso possível.
-                </p>
-                
-            </div>
+
+    <main>
+        <section id="Inicio">
+            <section class="hero" aria-labelledby="titulo-pricipal">
+                <div class="container hero-conteudo">
+                    <p class="etiqueta"><strong>Bem-Vindos ao Conectando Sorrisos</strong>.</p>
+                    <h1 id="titulo-pricipal">Um sorriso pode abrir a porta do primeiro emprego.</h1>
+                    <p class="hero-texto">
+                        "A plataforma da Turma do Bem que organiza cadastros, prioriza quem mais precisa e conecta dentistas voluntários, empresas e doadores em um só lugar."
+                    </p>
+                    <p class="hero-texto">Nosso projeto tem como o propósito de fazer a intermediação entre doadores, vagas de trabalho e principalmente
+                        pessoas que precisam de um sorriso para conseguir uma vida melhor.
+                        Acreditamos que um sorriso pode abrir portas e transformar vidas, e estamos aqui para ajudar a tornar isso possível.
+                    </p>
+                </div>
+            </section>
+
+            <article class="cartao">
+                <img src="img/hero-atendimento.jpg" alt="Foto de uma breve simulação gerada por IA." width="1536" height="1024" />
+            </article>
         </section>
-        <article class="cartao">
-            <img src="img/hero-atendimento.jpg" alt="Foto de uma breve simulação gerada por IA." width="1536" height="1024" />
-        </article>  
-    </section>  
     </main>
- 
+
     <footer>
         <div>
             <form>
-                 <fieldset>
-                     <legend>Entre em contato para fazer parte do projeto ou para sugestões.</legend>
- 
-                     <label for="">Email:</label>
-                     <input type="email" name="" id="" placeholder="Digite seu email">
- 
-                     <label for="">Comentário:</label>
+                <fieldset>
+                    <legend>Entre em contato para fazer parte do projeto ou para sugestões.</legend>
+
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" placeholder="Digite seu email">
+
+                    <label for="comentario">Comentário:</label>
                     <textarea
-                        name="Comentario"
+                        name="comentario"
+                        id="comentario"
                         placeholder="Digite seu comentário"
-                     ></textarea>
-                   
-                     <input type="submit" name="enviar" value="Enviar">
+                    ></textarea>
+
+                    <input type="submit" name="enviar" value="Enviar">
                 </fieldset>
             </form>
         </div>
         <p>&copy; 2026 - Todos os direitos reservados - Conectando Sorrisos</p>
     </footer>
+
+
 </body>
 </html>
