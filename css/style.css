@@ -118,6 +118,100 @@ nav a:focus-visible {
   margin: 0 auto 1rem;
 }
 
+.formulario {
+  max-width: 600px;
+  margin: var(--espaco-g) auto;
+  padding: var(--espaco-g);
+  background-color: var(--cor-superficie);
+  border: 1px solid var(--cor-borda);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+.campo {
+  margin-bottom: var(--espaco-m);
+}
+
+.campo label {
+  display: block;
+  margin-bottom: 0.35rem;
+  font-weight: 600;
+  color: var(--cor-texto);
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 0.7rem 0.9rem;
+  font: inherit;
+  color: var(--cor-texto);
+  background-color: #fff;
+  border: 1px solid var(--cor-borda);
+  border-radius: 8px;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+textarea {
+  resize: vertical;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #9aa5b1;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border-color: var(--cor-primaria-escura);
+  box-shadow: 0 0 0 3px rgba(125, 255, 4, 0.35);
+}
+
+input:user-invalid,
+textarea:user-invalid {
+  border-color: var(--cor-erro);
+}
+
+input:user-valid,
+textarea:user-valid {
+  border-color: var(--cor-sucesso);
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  width: auto;
+  margin-right: 0.4rem;
+  accent-color: var(--cor-primaria-escura);
+}
+
+.botao {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  font: inherit;
+  font-weight: 700;
+  color: #111;
+  background-color: var(--cor-primaria);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.1s;
+}
+
+.botao:hover {
+  background-color: #6be600;
+}
+
+.botao:active {
+  transform: translateY(1px);
+}
+
+.botao:focus-visible {
+  outline: 3px solid #111;
+  outline-offset: 2px;
+}
+
 /* RESONSIVIDADE */
 @media (max-width: 600px) {
   .cabecalho-conteudo {
