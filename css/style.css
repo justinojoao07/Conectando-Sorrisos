@@ -212,6 +212,58 @@ input[type="radio"] {
   outline-offset: 2px;
 }
 
+.tabela-wrapper {
+  max-width: 100%;
+  overflow-x: auto; /* rolagem lateral no celular */
+  margin: var(--espaco-g) 0;
+  border: 1px solid var(--cor-borda);
+  border-radius: 12px;
+  background-color: var(--cor-superficie);
+}
+
+.tabela {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 480px;
+}
+
+.tabela caption {
+  padding: var(--espaco-m);
+  font-weight: 700;
+  text-align: left;
+}
+
+.tabela th,
+.tabela td {
+  padding: 0.8rem 1rem;
+  text-align: left;
+  border-bottom: 1px solid var(--cor-borda);
+}
+
+.tabela thead th {
+  background-color: var(--menu-fundo);
+  color: var(--menu-texto);
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.tabela tbody tr:nth-child(even) {
+  background-color: #f8fafc;
+}
+
+.tabela tbody tr:hover {
+  background-color: rgba(125, 255, 4, 0.15);
+}
+
+.tabela tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.tabela .numero {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
 /* RESONSIVIDADE */
 @media (max-width: 600px) {
   .cabecalho-conteudo {
