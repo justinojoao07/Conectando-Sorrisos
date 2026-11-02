@@ -118,6 +118,7 @@ nav a:focus-visible {
   margin: 0 auto 1rem;
 }
 
+/* FORMULÁRIO */
 .formulario {
   max-width: 600px;
   margin: var(--espaco-g) auto;
