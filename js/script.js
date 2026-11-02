@@ -36,3 +36,24 @@ window.addEventListener("resize", function () {
     fecharMenu();
   }
 });
+
+
+function fazerLogin() {
+  const email = document.getElementById("email").value;
+  const senha = document.getElementById("senha").value;
+  const mensagemErro = document.getElementById("mensagem");
+
+  if (email === "" || senha === "") {
+    mensagem.style.color = "red";
+    mensagemErro.textContent = "Por favor, preencha todos os campos.";
+    return;
+  }
+
+
+  if (email === "turmadobem@email.com" && senha === "123456") {
+    window.location.href = "index.html";
+  }
+  else {
+    mensagemErro.textContent = "Email ou senha incorretos. Tente novamente.";
+  }
+}

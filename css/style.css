@@ -265,6 +265,7 @@ input[type="radio"] {
   font-variant-numeric: tabular-nums;
 }
 
+
 /* RESONSIVIDADE */
 @media (max-width: 600px) {
   .cabecalho-conteudo {
