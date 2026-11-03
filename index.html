@@ -16,7 +16,6 @@
             <a class="marca" href="index.html" aria-label="Conectando Sorrisos - Página Inicial">Conectando Sorrisos</a>
 
             <nav aria-label="Navegação Principal">
-              
                 <button id="botao-menu" class="hamburguer" type="button"
                         aria-label="Abrir menu" aria-expanded="false" aria-controls="menu">
                     <span></span>
@@ -39,66 +38,188 @@
     </header>
 
     <main>
-        <section id="Inicio">
-            <section class="hero" aria-labelledby="titulo-pricipal">
+        <!-- HERO -->
+        <div id="inicio">
+            <section class="hero" aria-labelledby="titulo-principal">
                 <div class="container hero-conteudo">
-                    <p class="etiqueta"><strong>Bem-Vindos ao Conectando Sorrisos</strong>.</p>
-                    <h1 id="titulo-pricipal">Um sorriso pode abrir a porta do primeiro emprego.</h1>
+                    <p class="etiqueta"><strong>Bem-vindos ao Conectando Sorrisos</strong></p>
+                    <h1 id="titulo-principal">Um sorriso pode abrir a porta do primeiro emprego.</h1>
                     <p class="hero-texto">
-                        "A plataforma da Turma do Bem que organiza cadastros, prioriza quem mais precisa e conecta dentistas voluntários, empresas e doadores em um só lugar."
+                        A plataforma da Turma do Bem que organiza cadastros, prioriza quem mais precisa e conecta dentistas voluntários, empresas e doadores em um só lugar.
                     </p>
-                    <p class="hero-texto">Nosso projeto tem como o propósito de fazer a intermediação entre doadores, vagas de trabalho e principalmente
+                    <p class="hero-texto">
+                        Nosso projeto tem como propósito fazer a intermediação entre doadores, vagas de trabalho e, principalmente,
                         pessoas que precisam de um sorriso para conseguir uma vida melhor.
                         Acreditamos que um sorriso pode abrir portas e transformar vidas, e estamos aqui para ajudar a tornar isso possível.
                     </p>
+
+                    <div class="hero-botoes">
+                        <a class="botao" href="paginas/cadastro.html">Preciso de ajuda</a>
+                        <a class="botao botao-secundario" href="paginas/doacao.html">Quero ajudar</a>
+                    </div>
                 </div>
             </section>
 
             <article class="cartao">
-                <img src="img/hero-atendimento.jpg" alt="Um menino jovem sentado em uma cadeira odontológica azul, sorrindo amplamente enquanto uma dentista feminina de jaleco branco e máscara facial fica ao lado dele, sorrindo de volta. Eles estão em um consultório odontológico iluminado com uma grande janela, plantas, ferramentas dentárias e uma pia ao fundo. Na parede há texto grande em letras brancas que diz Sorrisos que transformam, Saúde, oportunidade, futuro, e no jaleco da dentista aparece a palavra VOLUNTÁRIA. A imagem transmite acolhimento, confiança e esperança." width="100%" height="100%" />
+                <img class="imagem-hero" src="img/hero-atendimento.jpg" alt="Um menino jovem sentado em uma cadeira odontológica azul, sorrindo amplamente enquanto uma dentista feminina de jaleco branco e máscara facial fica ao lado dele, sorrindo de volta. Eles estão em um consultório odontológico iluminado com uma grande janela, plantas, ferramentas dentárias e uma pia ao fundo. Na parede há texto grande em letras brancas que diz Sorrisos que transformam, Saúde, oportunidade, futuro, e no jaleco da dentista aparece a palavra VOLUNTÁRIA. A imagem transmite acolhimento, confiança e esperança.">
             </article>
+        </div>
+
+        <!-- COMO FUNCIONA -->
+        <section class="secao container" aria-labelledby="titulo-como-funciona">
+            <h2 id="titulo-como-funciona">Como funciona</h2>
+            <ol class="passos">
+                <li>
+                    <span class="passo-numero">1</span>
+                    <h3>Cadastro</h3>
+                    <p>Preencha seus dados em poucos minutos.</p>
+                </li>
+                <li>
+                    <span class="passo-numero">2</span>
+                    <h3>Avaliação</h3>
+                    <p>Priorizamos quem mais precisa e organizamos a fila de espera.</p>
+                </li>
+                <li>
+                    <span class="passo-numero">3</span>
+                    <h3>Atendimento</h3>
+                    <p>Um dentista voluntário cuida do seu sorriso.</p>
+                </li>
+            </ol>
+        </section>
+
+        <!-- QUEM PODE PARTICIPAR -->
+        <section class="secao secao-destaque" aria-labelledby="titulo-participar">
+            <div class="container">
+                <h2 id="titulo-participar">Como você pode participar</h2>
+                <div class="grade-cards">
+                    <article class="card">
+                        <h3>Preciso de um sorriso</h3>
+                        <p>Faça seu cadastro e entre na fila de atendimento.</p>
+                        <a href="paginas/cadastro.html">Fazer cadastro</a>
+                    </article>
+                    <article class="card">
+                        <h3>Sou dentista</h3>
+                        <p>Doe seu tempo e transforme a vida de um jovem.</p>
+                        <a href="paginas/contato.html">Ser voluntário</a>
+                    </article>
+                    <article class="card">
+                        <h3>Tenho uma empresa</h3>
+                        <p>Ofereça vagas e apoie o primeiro emprego.</p>
+                        <a href="paginas/contato.html">Ser parceiro</a>
+                    </article>
+                    <article class="card">
+                        <h3>Quero doar</h3>
+                        <p>Sua contribuição ajuda a financiar tratamentos.</p>
+                        <a href="paginas/doacao.html">Fazer doação</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- NÚMEROS -->
+        <section class="secao container" aria-labelledby="titulo-numeros">
+            <h2 id="titulo-numeros">Nosso impacto</h2>
+            <ul class="numeros">
+                <li><strong>+500</strong><span>Sorrisos transformados</span></li>
+                <li><strong>+80</strong><span>Dentistas voluntários</span></li>
+                <li><strong>+30</strong><span>Empresas parceiras</span></li>
+                <li><strong>+120</strong><span>Jovens no mercado de trabalho</span></li>
+            </ul>
+        </section>
+
+        <!-- DEPOIMENTOS -->
+        <section class="secao secao-destaque" aria-labelledby="titulo-depoimentos">
+            <div class="container">
+                <h2 id="titulo-depoimentos">Histórias que inspiram</h2>
+                <div class="grade-cards">
+                    <blockquote class="depoimento">
+                        <p>Depois do tratamento, voltei a sorrir sem vergonha e consegui meu primeiro emprego.</p>
+                        <footer>"José Vitor", 19 anos</footer>
+                    </blockquote>
+                    <blockquote class="depoimento">
+                        <p>Ser voluntária me mostrou como um pequeno gesto muda uma vida inteira.</p>
+                        <footer>Nome da dentista voluntária</footer>
+                    </blockquote>
+                </div>
+            </div>
+        </section>
+
+        <!-- PARCEIROS -->
+        <section class="secao container" aria-labelledby="titulo-parceiros">
+            <h2 id="titulo-parceiros">Quem apoia</h2>
+            <ul class="parceiros">
+                <li>Turma do Bem</li>
+                <li>Parceiro 2</li>
+                <li>Parceiro 3</li>
+                <li>Parceiro 4</li>
+            </ul>
+        </section>
+
+        <!-- FAQ RESUMIDO -->
+        <section class="secao container" aria-labelledby="titulo-faq">
+            <h2 id="titulo-faq">Perguntas frequentes</h2>
+            <details class="faq-item">
+                <summary>Quem pode se cadastrar?</summary>
+                <p>Jovens que precisam de tratamento odontológico e atendem aos critérios do projeto.</p>
+            </details>
+            <details class="faq-item">
+                <summary>O atendimento tem custo?</summary>
+                <p>Não. Os tratamentos são feitos por dentistas voluntários.</p>
+            </details>
+            <details class="faq-item">
+                <summary>Como funciona a fila de espera?</summary>
+                <p>Priorizamos quem mais precisa, de acordo com a avaliação do cadastro.</p>
+            </details>
+            <p><a href="paginas/faq.html">Ver todas as perguntas</a></p>
+        </section>
+
+        <!-- CHAMADA FINAL -->
+        <section class="chamada-final" aria-labelledby="titulo-chamada">
+            <div class="container">
+                <h2 id="titulo-chamada">Pronto para transformar um sorriso?</h2>
+                <p>Junte-se a nós, seja recebendo ajuda ou ajudando alguém.</p>
+                <div class="hero-botoes">
+                    <a class="botao botao-claro" href="paginas/cadastro.html">Fazer cadastro</a>
+                    <a class="botao botao-contorno-claro" href="paginas/doacao.html">Quero doar</a>
+                </div>
+            </div>
         </section>
     </main>
 
+    <!-- RODAPÉ ÚNICO (login + contato + copyright) -->
+    <footer class="rodape">
+        <div class="container rodape-grade">
+            <div class="caixa-login">
+                <h2>Login</h2>
 
-    <footer>
-        <div class="caixa-login">
-            <h2>Login</h2>
+                <label for="usuario" class="somente-leitor">Usuário</label>
+                <input type="text" id="usuario" placeholder="Usuário" autocomplete="username">
 
-            <input type="text" id="usuario" placeholder="Usuário">
-            <input type="password" id="senha" placeholder="Senha">
+                <label for="senha" class="somente-leitor">Senha</label>
+                <input type="password" id="senha" placeholder="Senha" autocomplete="current-password">
 
-            <button onclick="fazerLogin()">Entrar</button>
+                <button type="button" onclick="fazerLogin()">Entrar</button>
 
-            <p id="mensagem"></p>
-        </div>
-    </footer>
-        
+                <p id="mensagem" role="status"></p>
+            </div>
 
-
-    <footer>
-        <div>
-            <form>
+            <form action="#" method="post">
                 <fieldset>
                     <legend>Entre em contato para fazer parte do projeto ou para sugestões.</legend>
 
                     <label for="email">Email:</label>
-                    <input type="email" name="email" id="email" placeholder="Digite seu email">
+                    <input type="email" name="email" id="email" placeholder="Digite seu email" required>
 
                     <label for="comentario">Comentário:</label>
-                    <textarea
-                        name="comentario"
-                        id="comentario"
-                        placeholder="Digite seu comentário"
-                    ></textarea>
+                    <textarea name="comentario" id="comentario" placeholder="Digite seu comentário" required></textarea>
 
                     <input type="submit" name="enviar" value="Enviar">
                 </fieldset>
             </form>
         </div>
-        <p>&copy; 2026 - Todos os direitos reservados - Conectando Sorrisos</p>
-    </footer>
 
+        <p class="copyright">&copy; 2026 - Todos os direitos reservados - Conectando Sorrisos</p>
+    </footer>
 
 </body>
 </html>

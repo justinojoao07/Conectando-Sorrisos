@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro - Conectando Sorrisos</title>
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/menu.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/menu.css">
 
-    <script src="/js/script.js" defer></script>
+    <script src="../js/script.js" defer></script>
 </head>
 
 <body>
@@ -17,7 +17,6 @@
             <a class="marca" href="../index.html" aria-label="Conectando Sorrisos - Página Inicial">Conectando Sorrisos</a>
 
             <nav aria-label="Navegação Principal">
-              
                 <button id="botao-menu" class="hamburguer" type="button"
                         aria-label="Abrir menu" aria-expanded="false" aria-controls="menu">
                     <span></span>
@@ -27,78 +26,85 @@
 
                 <ul id="menu" class="menu">
                     <li><a href="../index.html">Início</a></li>
-                    <li><a href="/paginas/integrantes.html">Quem Somos</a></li>
-                    <li><a href="/paginas/sobre.html">Sobre</a></li>
-                    <li><a href="/paginas/faq.html">FAQ</a></li>
-                    <li><a href="/paginas/contato.html">Contato</a></li>
-                    <li><a href="/paginas/cadastro.html">Cadastro</a></li>
-                    <li><a href="/paginas/doacao.html">Doação</a></li>
-                    <li><a href="/paginas/fila.html">Fila de Espera</a></li>
+                    <li><a href="integrantes.html">Quem Somos</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                    <li><a href="cadastro.html">Cadastro</a></li>
+                    <li><a href="doacao.html">Doação</a></li>
+                    <li><a href="fila.html">Fila de Espera</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
     <main>
+        <section class="pagina-topo" aria-labelledby="titulo-cadastro">
+            <div class="container">
+                <h1 id="titulo-cadastro">Cadastro</h1>
+                <p>
+                    Cadastre seus dados para participar do processo de atendimento odontológico.
+                </p>
+            </div>
+        </section>
 
-        <p>Cadastre seus dados para participar do processo
-             de atendimento odontológico.</p>
+        <section class="secao container" aria-label="Formulário de cadastro">
+            <form class="form-cadastro" id="form-cadastro" action="#" method="post">
 
-        <h1>Cadastro</h1>
+                <div class="campo">
+                    <label for="nome">Nome completo</label>
+                    <input type="text" id="nome" name="nome" autocomplete="name" required>
+                </div>
 
-        <form>
-            
-            <label>Nome completo:</label>
-            <input type="text">
+                <div class="campo">
+                    <label for="idade">Idade</label>
+                    <input type="number" id="idade" name="idade" min="1" max="120" inputmode="numeric" required>
+                </div>
 
-            <br><br>
+                <div class="campo">
+                    <label for="programa">Programa de interesse</label>
+                    <select id="programa" name="programa" required>
+                        <option value="">Escolha uma opção</option>
+                        <option value="dentista-do-bem">Dentista do Bem</option>
+                        <option value="apolonias-do-bem">Apolônias do Bem</option>
+                    </select>
+                </div>
 
-            <label>Idade:</label>
-            <input type="number">
+                <div class="campo">
+                    <label for="vulnerabilidade">Vulnerabilidade social</label>
+                    <select id="vulnerabilidade" name="vulnerabilidade" required>
+                        <option value="">Escolha uma opção</option>
+                        <option value="alta">Alta vulnerabilidade</option>
+                        <option value="media">Média vulnerabilidade</option>
+                        <option value="baixa">Baixa vulnerabilidade</option>
+                    </select>
+                </div>
 
-            <br><br>
+                <div class="campo-check">
+                    <input type="checkbox" id="primeiro-emprego" name="primeiro-emprego">
+                    <label for="primeiro-emprego">
+                        Estou próximo(a) ou à procura do primeiro emprego.
+                    </label>
+                </div>
 
-            <label>Programa de interesse:</label>
+                <div class="campo-check">
+                    <input type="checkbox" id="consentimento" name="consentimento" required>
+                    <label for="consentimento">
+                        Autorizo o uso dos meus dados para o processo de atendimento. Se for menor de 18 anos,
+                        confirmo que tenho autorização de um responsável.
+                    </label>
+                </div>
 
-            <select>
-                <option>Escolha uma opção</option>
-                <option>Dentista do Bem</option>
-                <option>Apolonônias do Bem</option>
-            </select>
+                <button type="submit" class="botao botao-enviar">Cadastrar candidato(a)</button>
 
-            <br><br>
-
-            <label>Vulnerabilidade social:</label>
-
-            <select>
-                <option>Escolha uma opção</option>
-                <option>Alta vulnerabilidade</option>
-                <option>Média vulnerabilidade</option>
-                <option>Baixa vulnerabilidade</option>
-            </select>
-
-            <br><br>
-
-            <label>
-                <input type="checkbox">
-                Estou próximo(a) ou estou a procura do primeiro emprego.
-            </label>
-
-            <br><br>
-
-            <button type="submit">
-                Cadastrar candidato(a)
-            </button>
-
-        </form>
-    
+                <p id="retorno-cadastro" class="retorno-contato" role="status"></p>
+            </form>
+        </section>
     </main>
 
-    <footer>
-        <p>&copy; 2026 - Todos os direitos reservados - Conectando Sorrisos</p>
-
+    <footer class="rodape">
+        <p class="copyright">&copy; 2026 - Todos os direitos reservados - Conectando Sorrisos</p>
     </footer>
 
 </body>
-
 </html>

@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fila de prioridade - Conectando Sorrisos</title>
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/menu.css">
+    <title>Fila de Prioridade - Conectando Sorrisos</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/menu.css">
 
-    <script src="/js/script.js" defer></script>
+    <script src="../js/script.js" defer></script>
 </head>
 
 <body>
@@ -17,7 +17,6 @@
             <a class="marca" href="../index.html" aria-label="Conectando Sorrisos - Página Inicial">Conectando Sorrisos</a>
 
             <nav aria-label="Navegação Principal">
-              
                 <button id="botao-menu" class="hamburguer" type="button"
                         aria-label="Abrir menu" aria-expanded="false" aria-controls="menu">
                     <span></span>
@@ -27,75 +26,113 @@
 
                 <ul id="menu" class="menu">
                     <li><a href="../index.html">Início</a></li>
-                    <li><a href="/paginas/integrantes.html">Quem Somos</a></li>
-                    <li><a href="/paginas/sobre.html">Sobre</a></li>
-                    <li><a href="/paginas/faq.html">FAQ</a></li>
-                    <li><a href="/paginas/contato.html">Contato</a></li>
-                    <li><a href="/paginas/cadastro.html">Cadastro</a></li>
-                    <li><a href="/paginas/doacao.html">Doação</a></li>
-                    <li><a href="/paginas/fila.html">Fila de Espera</a></li>
+                    <li><a href="integrantes.html">Quem Somos</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                    <li><a href="cadastro.html">Cadastro</a></li>
+                    <li><a href="doacao.html">Doação</a></li>
+                    <li><a href="fila.html">Fila de Espera</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
     <main>
+        <section class="pagina-topo" aria-labelledby="titulo-fila">
+            <div class="container">
+                <h1 id="titulo-fila">Fila de Prioridade</h1>
+                <p>
+                    Após o cadastro, os participantes são organizados de acordo com
+                    critérios de prioridade, para que o atendimento chegue primeiro a quem mais precisa.
+                </p>
+            </div>
+        </section>
 
-        <p>Após fazermos os cadastros, os integrantes são organizados
-             com a funcionalidade dos critérios de prioridade.
-        </p>
+        <!-- CRITÉRIOS (obs: precisamos ter melhor acesso ao programa para entender como funciona a priorização deles.) -->
+        <section class="secao container" aria-labelledby="titulo-criterios">
+            <h2 id="titulo-criterios">Critérios de prioridade</h2>
 
-        <h2>Fila de prioridade</h2>
+            <ol class="criterios">
+                <li>
+                    <span class="passo-numero">1</span>
+                    <h3>Idade</h3>
+                    <p>Jovens entre 11 e 17 anos.</p>
+                </li>
+                <li>
+                    <span class="passo-numero">2</span>
+                    <h3>Vulnerabilidade social</h3>
+                    <p>Nível de vulnerabilidade social da família.</p>
+                </li>
+                <li>
+                    <span class="passo-numero">3</span>
+                    <h3>Situação de violência</h3>
+                    <p>Casos que envolvem situação de violência.</p>
+                </li>
+                <li>
+                    <span class="passo-numero">4</span>
+                    <h3>Primeiro emprego</h3>
+                    <p>Proximidade da entrada no primeiro emprego.</p>
+                </li>
+            </ol>
+        </section>
 
-        <ul>
-            <li>Idade entre 11 a 17 anos</li>
+        <!-- EXEMPLO DE FILA -->
+        <section class="secao secao-destaque" aria-labelledby="titulo-exemplo">
+            <div class="container">
+                <h2 id="titulo-exemplo">Exemplo de fila</h2>
 
-            <li>Nivel de vulnerabilidade social</li>
+                <div class="tabela-rolagem">
+                    <table class="tabela-fila">
+                        <caption>Exemplo ilustrativo com nomes fictícios</caption>
+                        <thead>
+                            <tr>
+                                <th scope="col">Nome</th>
+                                <th scope="col">Idade</th>
+                                <th scope="col">Programa de interesse</th>
+                                <th scope="col">Prioridade</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Maria da Silva</td>
+                                <td>15</td>
+                                <td>Dentistas do Bem</td>
+                                <td><span class="prioridade prioridade-alta">Alta</span></td>
+                            </tr>
+                            <tr>
+                                <td>João Souza</td>
+                                <td>16</td>
+                                <td>Dentistas do Bem</td>
+                                <td><span class="prioridade prioridade-media">Média</span></td>
+                            </tr>
+                            <tr>
+                                <td>Ana Oliveira</td>
+                                <td>18</td>
+                                <td>Apolônias do Bem</td>
+                                <td><span class="prioridade prioridade-baixa">Baixa</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
 
-            <li>Situaçõa de violência </li>
-
-            <li>Proximidade do primeiro emprego</li>
-
-        </ul>
-
-        <h2>Exemplo de fila</h2>
-        <table border="1">
-            <tr>
-                <th>Nome</th>
-                <th>Idade</th>
-                <th>Programa de interesse</th>
-                <th>Prioridade</th>
-            </tr>
-
-            <tr>
-                <td>Maria da Silva</td>
-                <td>15</td>
-                <td>Dentistas do Bem</td>
-                <td>Alta</td>
-            </tr>
-
-            <tr>
-                <td>João Souza</td>
-                <td>16</td>
-                <td>Dentistas do Bem</td>
-                <td>Média</td>
-            </tr>
-
-            <tr>
-                <td>Ana Oliveira</td>
-                <td>18</td>
-                <td>Apolônias do Bem</td>
-                <td>Baixa</td>
-            </tr>
-
-        </table>
-
+        <!-- CHAMADA -->
+        <section class="chamada-final" aria-labelledby="titulo-chamada-fila">
+            <div class="container">
+                <h2 id="titulo-chamada-fila">Ainda não fez o cadastro?</h2>
+                <p>Cadastre-se para entrar na fila de atendimento.</p>
+                <div class="hero-botoes">
+                    <a class="botao botao-claro" href="cadastro.html">Fazer cadastro</a>
+                </div>
+            </div>
+        </section>
     </main>
 
-    <footer>
-        <p>&copy; 2026 - Todos os direitos reservados - Conectando Sorrisos</p>
+    <footer class="rodape">
+        <p class="copyright">&copy; 2026 - Todos os direitos reservados - Conectando Sorrisos</p>
     </footer>
-
 
 </body>
 

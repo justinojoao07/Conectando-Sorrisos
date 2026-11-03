@@ -1,16 +1,15 @@
-<!doctype html>
-<html lang="pt-br">
+<!DOCTYPE html>
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contato</title>
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/menu.css">
+    <title>Contato - Conectando Sorrisos</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/menu.css">
 
-    <script src="/js/script.js" defer></script>
-
-
+    <script src="../js/script.js" defer></script>
+</head>
 
 <body>
     <header class="cabecalho">
@@ -18,7 +17,6 @@
             <a class="marca" href="../index.html" aria-label="Conectando Sorrisos - Página Inicial">Conectando Sorrisos</a>
 
             <nav aria-label="Navegação Principal">
-              
                 <button id="botao-menu" class="hamburguer" type="button"
                         aria-label="Abrir menu" aria-expanded="false" aria-controls="menu">
                     <span></span>
@@ -28,69 +26,83 @@
 
                 <ul id="menu" class="menu">
                     <li><a href="../index.html">Início</a></li>
-                    <li><a href="/paginas/integrantes.html">Quem Somos</a></li>
-                    <li><a href="/paginas/sobre.html">Sobre</a></li>
-                    <li><a href="/paginas/faq.html">FAQ</a></li>
-                    <li><a href="/paginas/contato.html">Contato</a></li>
-                    <li><a href="/paginas/cadastro.html">Cadastro</a></li>
-                    <li><a href="/paginas/doacao.html">Doação</a></li>
-                    <li><a href="/paginas/fila.html">Fila de Espera</a></li>
+                    <li><a href="integrantes.html">Quem Somos</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                    <li><a href="cadastro.html">Cadastro</a></li>
+                    <li><a href="doacao.html">Doação</a></li>
+                    <li><a href="fila.html">Fila de Espera</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <h1>Entre em contato</h1>
+    <main>
+        <section class="pagina-topo" aria-labelledby="titulo-contato">
+            <div class="container">
+                <h1 id="titulo-contato">Entre em contato</h1>
+                <p>
+                    Alguma dúvida ou gostaria de saber mais sobre o projeto?
+                    Entre em contato conosco.
+                </p>
+            </div>
+        </section>
 
-    <p>
-        <strong>Alguma dúvida ou gostaria de saber mais sobre o projeto?
-        Entre em contato conosco.</strong>
-    </p>
+        <section class="secao container" aria-label="Contato">
+            <div class="contato-grade">
 
-    <h2>Informações de contato</h2>
+                <!-- INFORMAÇÕES -->
+                <div class="contato-info">
+                    <h2>Informações de contato</h2>
 
-    <p>
-        <strong>E-mail:</strong> contato@projetodobem.com
-    </p>
+                    <ul class="contato-lista">
+                        <li>
+                            <strong>E-mail</strong>
+                            <a href="mailto:contato@projetodobem.com">contato@projetodobem.com</a>
+                        </li>
+                        <li>
+                            <strong>Telefone</strong>
+                            <a href="tel:+5511999999999">(11) 99999-9999</a>
+                        </li>
+                        <li>
+                            <strong>Endereço</strong>
+                            <span>São Paulo - SP</span>
+                        </li>
+                    </ul>
+                </div>
 
-    <p>
-        <strong>Telefone:</strong> (11) 99999-9999
-    </p>
+                <!-- FORMULÁRIO -->
+                <form class="form-contato" id="form-contato" action="#" method="post">
+                    <h2>Envie uma mensagem</h2>
 
-    <p>
-        <strong>Endereço:</strong> São Paulo - SP
-    </p>
+                    <div class="campo">
+                        <label for="nome">Nome</label>
+                        <input type="text" id="nome" name="nome" autocomplete="name" required>
+                    </div>
 
+                    <div class="campo">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" name="email" autocomplete="email" required>
+                    </div>
 
-    <h2>Envie uma mensagem</h2>
+                    <div class="campo">
+                        <label for="mensagem">Mensagem</label>
+                        <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+                    </div>
 
-    <form>
+                    <button type="submit" class="botao botao-enviar">Enviar mensagem</button>
 
-        <label for="nome">Nome:</label>
-        <br>
-        <input type="text" id="nome" name="nome">
-        <br><br>
+                    <p id="retorno-contato" class="retorno-contato" role="status"></p>
+                </form>
 
-        <label for="email">E-mail:</label>
-        <br>
-        <input type="email" id="email" name="email">
-        <br><br>
+            </div>
+        </section>
+    </main>
 
-        <label for="mensagem">Mensagem:</label>
-        <br>
-        <textarea id="mensagem" name="mensagem" rows="5" cols="30"></textarea>
-        <br><br>
-
-        <button type="submit">Enviar mensagem</button>
-
-    </form>
-    
-</main>
-
-    <footer>
-        <p>&copy; 2026 - Todos os direitos reservados - Conectando Sorrisos</p>
+    <footer class="rodape">
+        <p class="copyright">&copy; 2026 - Todos os direitos reservados - Conectando Sorrisos</p>
     </footer>
 
 </body>
-
 </html>

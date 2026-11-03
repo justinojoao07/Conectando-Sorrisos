@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Doação - Conectando Sorrisos</title>
-   <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/menu.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/menu.css">
 
-    <script src="/js/script.js" defer></script>
+    <script src="../js/script.js" defer></script>
 </head>
 
 <body>
@@ -17,7 +17,6 @@
             <a class="marca" href="../index.html" aria-label="Conectando Sorrisos - Página Inicial">Conectando Sorrisos</a>
 
             <nav aria-label="Navegação Principal">
-              
                 <button id="botao-menu" class="hamburguer" type="button"
                         aria-label="Abrir menu" aria-expanded="false" aria-controls="menu">
                     <span></span>
@@ -25,78 +24,90 @@
                     <span></span>
                 </button>
 
-               <ul id="menu" class="menu">
+                <ul id="menu" class="menu">
                     <li><a href="../index.html">Início</a></li>
-                    <li><a href="/paginas/integrantes.html">Quem Somos</a></li>
-                    <li><a href="/paginas/sobre.html">Sobre</a></li>
-                    <li><a href="/paginas/faq.html">FAQ</a></li>
-                    <li><a href="/paginas/contato.html">Contato</a></li>
-                    <li><a href="/paginas/cadastro.html">Cadastro</a></li>
-                    <li><a href="/paginas/doacao.html">Doação</a></li>
-                    <li><a href="/paginas/fila.html">Fila de Espera</a></li>
+                    <li><a href="integrantes.html">Quem Somos</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                    <li><a href="cadastro.html">Cadastro</a></li>
+                    <li><a href="doacao.html">Doação</a></li>
+                    <li><a href="fila.html">Fila de Espera</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
     <main>
+        <section class="pagina-topo" aria-labelledby="titulo-doacao">
+            <div class="container">
+                <h1 id="titulo-doacao">Transformando a fila em atendimento</h1>
+                <p>
+                    Entenda como a sua doação ajuda a oferecer atendimento odontológico
+                    para as pessoas que atendemos. A sua contribuição é fundamental para que possamos continuar.
+                </p>
+            </div>
+        </section>
 
-        <h1>Transformando a fila em atendimento</h1>
+        <!-- FORMAS DE DOAÇÃO -->
+        <section class="secao container" aria-labelledby="titulo-formas">
+            <h2 id="titulo-formas">Formas de doação</h2>
 
-        <p>Entenda como a sua doação ajuda a oferecer atendimento odontológico
-            para as pessoas que atendemos. A sua contribuição é fundamental para que possamos continuar.
-        </p>
+            <ul class="formas-doacao">
+                <li>Pix</li>
+                <li>Cartão</li>
+                <li>Transferência bancária</li>
+                <li>Doação de materiais odontológicos</li>
+                <li>Empresa parceira</li>
+            </ul>
+        </section>
 
-        <h2>Formas de doações</h2>
+        <!-- FORMULÁRIO DE DOAÇÃO -->
+        <section class="secao secao-destaque" aria-labelledby="titulo-valor">
+            <div class="container">
+                <h2 id="titulo-valor">Faça sua doação</h2>
 
-        <ul>
-            <li>Pix</li>
+                <form class="form-doacao" id="form-doacao" action="#" method="post">
+                    <fieldset>
+                        <legend>Escolha um valor</legend>
 
-            <li>Cartão</li>
+                        <div class="valores">
+                            <button type="button" class="valor-botao" data-valor="30" aria-pressed="false">R$ 30,00</button>
+                            <button type="button" class="valor-botao" data-valor="60" aria-pressed="false">R$ 60,00</button>
+                            <button type="button" class="valor-botao" data-valor="120" aria-pressed="false">R$ 120,00</button>
+                            <button type="button" class="valor-botao" data-valor="250" aria-pressed="false">R$ 250,00</button>
+                        </div>
+                    </fieldset>
 
-            <li>Transferência bancária</li>
+                    <div class="campo-valor">
+                        <label for="valor-doacao">Ou digite outro valor (R$):</label>
+                        <input type="number" id="valor-doacao" name="valor" min="1" step="0.01" placeholder="Ex.: 45,00" inputmode="decimal">
+                    </div>
 
-            <li>Doações de materiais odontológicos</li>
+                    <button type="submit" class="botao botao-doar">Doar</button>
 
-            <li>Empresa parceira</li>
+                    <p id="mensagem-doacao" class="mensagem-doacao" role="status"></p>
+                </form>
+            </div>
+        </section>
 
-        </ul>
-
-        <h2>Escolha um valor</h2>
-
-        <button>R$ 30,00</button>
-
-        <button>R$ 60,00</button>
-
-        <button>R$ 120,00</button>
-
-        <button>R$ 250,00</button>
-
-        <h2>Outro valor</h2>
-
-        <label>Valor da doação:</label>
-
-        <input type="number" placeholder="R$">
-
-        <br><br>
-
-        <button type="button">
-            Doar
-        </button>
-
-        <h2>Privacidade</h2>
-
-        <p>
-            <strong>Garantimos que todas as informações fornecidas durante o processo de doação serão tratadas com a máxima confidencialidade e segurança. 
-            Seus dados pessoais não serão compartilhados com terceiros sem o seu consentimento, e utilizaremos medidas de proteção para evitar acessos não autorizados.</strong>
-        </p>
-
+        <!-- PRIVACIDADE -->
+        <section class="secao container" aria-labelledby="titulo-privacidade">
+            <div class="privacidade">
+                <h2 id="titulo-privacidade">Privacidade</h2>
+                <p>
+                    Todas as informações fornecidas durante o processo de doação são tratadas com
+                    confidencialidade e segurança. Seus dados pessoais não serão compartilhados com
+                    terceiros sem o seu consentimento, e utilizamos medidas de proteção para evitar
+                    acessos não autorizados.
+                </p>
+            </div>
+        </section>
     </main>
 
-    <footer>
-        <p>&copy; 2026 - Todos os direitos reservados - Conectando Sorrisos</p>
+    <footer class="rodape">
+        <p class="copyright">&copy; 2026 - Todos os direitos reservados - Conectando Sorrisos</p>
     </footer>
 
 </body>
-
 </html>
